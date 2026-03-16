@@ -1,8 +1,28 @@
 # Research Knowledge Vault
 
 A living knowledge system for computational pathology and biomedical ML research.
-Built with [arscontexta](https://github.com/agenticnotetaking/arscontexta) — a Claude Code
+Built with [arscontexta](https://github.com/agenticnotetaking/arscontexta). This is a Claude Code
 plugin that generates a persistent cognitive architecture from conversation.
+
+
+## Inspiration
+
+This vault was inspired by Heinrich ([@arscontexta](https://x.com/arscontexta)) whose work on
+skill graphs and agentic knowledge management directly motivated this approach.
+
+Key posts that explain the thinking behind this system:
+
+- [Skill Graphs > SKILL.md](https://x.com/arscontexta/status/2023957499183829467) - the original post
+  explaining why single skill files are not enough for deep domains and how wikilink graphs
+  enable agents to navigate complex knowledge
+- [Obsidian + Claude Code 101](https://x.com/arscontexta/status/2013045749580259680) - how Claude Code
+  operates markdown vaults as a living thinking system
+- [arscontexta GitHub](https://github.com/agenticnotetaking/arscontexta) - the plugin that generated this vault
+
+The core insight from Heinrich's work: a vault encodes how you think, not just what you thought about.
+Every note is effectively a skill that gets injected when relevant. The methodology becomes
+part of the system.
+
 
 ## What this is
 
@@ -130,23 +150,7 @@ Open this folder in [Obsidian](https://obsidian.md) to see the wikilink connecti
 rendered as an interactive network. The cross-cutting theme nodes (class-imbalance,
 eval-metrics, ssl-pretraining) will show the most connections since every project links to them.
 
-## Inspiration
 
-This vault was inspired by Heinrich ([@arscontexta](https://x.com/arscontexta)) whose work on
-skill graphs and agentic knowledge management directly motivated this approach.
-
-Key posts that explain the thinking behind this system:
-
-- [Skill Graphs > SKILL.md](https://x.com/arscontexta/status/2023957499183829467) - the original post
-  explaining why single skill files are not enough for deep domains and how wikilink graphs
-  enable agents to navigate complex knowledge
-- [Obsidian + Claude Code 101](https://x.com/arscontexta/status/2013045749580259680) - how Claude Code
-  operates markdown vaults as a living thinking system
-- [arscontexta GitHub](https://github.com/agenticnotetaking/arscontexta) - the plugin that generated this vault
-
-The core insight from Heinrich's work: a vault encodes how you think, not just what you thought about.
-Every note is effectively a skill that gets injected when relevant. The methodology becomes
-part of the system.
 
 ## Related
 
