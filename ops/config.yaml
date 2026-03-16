@@ -1,0 +1,59 @@
+# ops/config.yaml — edit these to adjust your system
+# See ops/derivation.md for WHY each choice was made
+
+dimensions:
+  granularity: atomic
+  organization: flat
+  linking: explicit+implicit
+  processing: heavy
+  navigation: 3-tier
+  maintenance: condition-based
+  schema: dense
+  automation: full
+
+features:
+  semantic-search: true
+  processing-pipeline: true
+  sleep-processing: false
+  voice-capture: false
+
+processing_tier: auto    # auto | 1 | 2 | 3 | 4
+
+processing:
+  depth: standard          # deep | standard | quick
+  chaining: suggested      # manual | suggested | automatic
+  extraction:
+    selectivity: moderate  # strict | moderate | permissive
+    categories:
+      - methodology-claims
+      - experimental-findings
+      - implementation-patterns
+      - cross-domain-insights
+      - class-imbalance-strategies
+      - evaluation-methods
+      - open-questions
+  verification:
+    description_test: true
+    schema_check: true
+    link_check: true
+  reweave:
+    scope: related         # related | broad | full
+    frequency: after_create # after_create | periodic | manual
+
+provenance: full
+
+personality:
+  enabled: false
+
+research:
+  primary: web-search         # exa-deep-research | web-search (update if Exa available)
+  fallback: web-search        # exa-web-search | web-search
+  last_resort: web-search     # always available
+  default_depth: moderate     # light | moderate | deep
+
+maintenance:
+  orphan_threshold: 1         # any orphans trigger surface for /connect
+  inbox_age_days: 3           # inbox items older than 3 days trigger /extract suggestion
+  observation_threshold: 10   # pending observations trigger /reassess
+  tension_threshold: 5        # pending tensions trigger /reassess
+  topic_map_size_limit: 40    # notes per topic map before split suggestion
